@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bash-like Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> <!-- Font import -->
+</head>
+<body class="bg-black text-green-400 p-4">
+    <main class="max-w-2xl mx-auto relative">
+        <header class="mb-4">
+            <h1 class="text-2xl text-green-600">user@portfolio</h1>
+            <p class="text-blue-400">~$ whoami</p>
+            <p class="ml-4">John Doe - Web Developer</p>
+        </header>
+        
+        <section class="mb-4">
+            <h2 class="text-blue-400">Skills</h2>
+            <p class="ml-4">
+                - HTML<br>
+                - CSS<br>
+                - JavaScript<br>
+                - React<br>
+                - Node.js
+            </p>
+        </section>
+        
+        <section class="mb-4">
+            <h2 class="text-blue-400">Projects</h2>
+            <p class="ml-4">
+                e-commerce-site.html<br>
+                weather-app.js<br>
+                blog-platform.php
+            </p>
+        </section>
+        
+        <section class="mb-4">
+            <h2 class="text-blue-400">Contact</h2>
+            <p class="ml-4">
+                Email: <a href="mailto:john.doe@example.com" class="text-green-600">john.doe@example.com</a><br>
+                GitHub: <a href="https://github.com/johndoe" class="text-green-600">github.com/johndoe</a><br>
+                LinkedIn: <a href="https://linkedin.com/in/johndoe" class="text-green-600">linkedin.com/in/johndoe</a>
+            </p>
+        </section>
+        
+        <div class="command-line">
+            <span class="text-green-600">user@portfolio</span>:<span class="text-blue-400">~</span>$ 
+            <input id="commandInput" type="text" placeholder="Type a command..." />
+            <div id="suggestions" class="suggestions hidden"></div>
+        </div>
+        
+        <div id="output" class="output mt-4"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

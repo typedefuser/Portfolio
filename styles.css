@@ -1,0 +1,51 @@
+body {
+    font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace; /* Monospace font for a terminal look */
+}
+#commandInput {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: inherit;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.5rem; /* Padding for better touch targets */
+}
+#commandInput:focus {
+    outline: none;
+}
+.suggestions {
+    background: rgba(0, 0, 0, 0.9); /* Darker background for suggestions */
+    border: 1px solid #4A5568;
+    position: absolute;
+    z-index: 10;
+    width: calc(100% - 2px);
+    max-height: 150px; /* Limit height for overflow */
+    overflow-y: auto; /* Scroll if too many suggestions */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 0.25rem; /* Space between input and suggestions */
+    display: none; /* Initially hidden */
+}
+.suggestion-item {
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #68D391; /* Tailwind green-400 */
+}
+.suggestion-item:hover {
+    background: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+}
+.command-line {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem; /* Padding for the command line */
+    border: 1px solid #4A5568; /* Border for the command line */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(0, 0, 0, 0.7); /* Dark background for command line */
+    position: relative; /* Position relative for absolute positioning of suggestions */
+}
+.output {
+    background: rgba(0, 0, 0, 0.7); /* Dark background for output */
+    padding: 0.5rem;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 1rem; /* Space above output */
+}
