@@ -3,55 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="John Doe's portfolio showcasing web development projects."> <!-- Added description -->
     <title>Bash-like Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> <!-- Font import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
 </head>
 <body class="bg-black text-green-400 p-4">
     <main class="max-w-2xl mx-auto relative">
         <header class="mb-4">
-            <h1 class="text-2xl text-green-600">user@portfolio</h1>
+            <h1 class="text-2xl text-green-600">typedefuser@portfolio</h1>
             <p class="text-blue-400">~$ whoami</p>
-            <p class="ml-4">John Doe - Web Developer</p>
+            <p class="ml-4">Hi,I code in c++,JavaScript,java and python
+                </p>
         </header>
-        
-        <section class="mb-4">
-            <h2 class="text-blue-400">Skills</h2>
-            <p class="ml-4">
-                - HTML<br>
-                - CSS<br>
-                - JavaScript<br>
-                - React<br>
-                - Node.js
-            </p>
+
+        <section class="mb-4 border-b border-green-600 pb-4 pl-4"> <!-- Added left padding -->
+            <p>Email: <a href="mailto:john.doe@example.com" class="text-green-600">majhinikhilesh23@gmail.com</a></p>
+            <div class="flex space-x-4 mt-2">
+                <a href="https://github.com/typedefuser" target="_blank" class="flex items-center">
+                    <i class="fab fa-github fa-2x" style="color: #6CC24A;"></i>
+                    <span class="ml-2">GitHub</span>
+                </a>
+                <a href="https://leetcode.com/u/nikhileshmajhi/" target="_blank" class="flex items-center">
+                    <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png" alt="LeetCode" />
+                    <span class="ml-2">LeetCode</span>
+                </a>
+                <a href="https://codeforces.com/profile/watidoink" target="_blank" class="flex items-center">
+                    <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/external-codeforces-programming-competitions-and-contests-programming-community-logo-filled-tal-revivo.png" alt="Codeforces" />
+                    <span class="ml-2">Codeforces</span>
+                </a>
+            </div>
         </section>
-        
-        <section class="mb-4">
-            <h2 class="text-blue-400">Projects</h2>
-            <p class="ml-4">
-                e-commerce-site.html<br>
-                weather-app.js<br>
-                blog-platform.php
-            </p>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-4">
+            <h2 class="text-blue-400">~$ ls Projects</h2>
+            <div id="projectList" class="grid grid-cols-1 gap-4"></div>
         </section>
-        
-        <section class="mb-4">
-            <h2 class="text-blue-400">Contact</h2>
-            <p class="ml-4">
-                Email: <a href="mailto:john.doe@example.com" class="text-green-600">john.doe@example.com</a><br>
-                GitHub: <a href="https://github.com/johndoe" class="text-green-600">github.com/johndoe</a><br>
-                LinkedIn: <a href="https://linkedin.com/in/johndoe" class="text-green-600">linkedin.com/in/johndoe</a>
-            </p>
-        </section>
-        
-        <div class="command-line">
-            <span class="text-green-600">user@portfolio</span>:<span class="text-blue-400">~</span>$ 
-            <input id="commandInput" type="text" placeholder="Type a command..." />
-            <div id="suggestions" class="suggestions hidden"></div>
-        </div>
-        
-        <div id="output" class="output mt-4"></div>
     </main>
 
     <script src="script.js"></script>
