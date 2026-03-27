@@ -30,4 +30,29 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .cursor-blink {
+    display: inline-block;
+    width: 0.6em;
+    height: 1.2em;
+    background-color: currentColor;
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
+
+  @keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .terminal-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+  }
+
+  .terminal-modal-border {
+    border: 1px solid #166534; /* green-800 */
+    box-shadow: 0 0 20px rgba(22, 101, 52, 0.2);
+  }
 }
